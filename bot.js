@@ -7,7 +7,7 @@ const swearWords = ["كلمة", "كلمة", "كلمة", "كلمة", "كلمة", 
       sentMessage.delete(20000)
     })
     message.delete(3000)
-    client.channels.get('ايدي الروم').send(message.author.toString() + "استخدم كلام لا يليق ~")
+    swearWords.channels.get('ايدي الروم').send(message.author.toString() + "استخدم كلام لا يليق ~")
   }
 });
 
