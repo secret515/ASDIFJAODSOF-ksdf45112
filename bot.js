@@ -1,9 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-// THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOT_TOKEN);
-
 
 const swearWords = ["كلمة", "كلمة", "كلمة", "كلمة", "كلمة", "كلمة", "كلمة", "كلمة", "كلمة", "كلمة", "كلمة", "كلمة"]; 
   if( swearWords.some(word => message.content.includes(word)) ) {
@@ -11,8 +8,11 @@ const swearWords = ["كلمة", "كلمة", "كلمة", "كلمة", "كلمة", 
       sentMessage.delete(20000)
     })
     message.delete(3000)
-    client.channels.get('ايدي الروم').send(message.author.toString() + "استخدم كلام لا يليق ~")
+    client.channels.get('446766278028296223').send(message.author.toString() + "استخدم كلام لا يليق ~")
   }
 });
 
 
+
+// THIS  MUST  BE  THIS  WAY
+client.login(process.env.BOT_TOKEN);
